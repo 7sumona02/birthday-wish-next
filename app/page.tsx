@@ -11,7 +11,7 @@ const defaults = {
   origin: { y: 0.7 },
 };
 
-function fire(particleRatio, opts) {
+function fire(particleRatio: number, opts: any) {
   confetti(
     Object.assign({}, defaults, opts, {
       particleCount: Math.floor(count * particleRatio),
@@ -19,8 +19,9 @@ function fire(particleRatio, opts) {
   );
 }
 
+
 const Home = () => {
-  const audioRef = useRef(null); // Create a ref for the audio element
+  const audioRef = useRef<HTMLAudioElement | null>(null); // Create a ref for the audio element
   const bannerRef = useRef(null); // Create a ref for the banner element
   const [showBanner, setShowBanner] = useState(false); // State to control banner visibility
   const [showCake, setShowCake] = useState(false); // State to control cake visibility
