@@ -11,7 +11,7 @@ const BCard = () => {
        </div>
   </div>
   <div className="text-container">
-    <p id="head">Happy Birthday Aniket</p>
+    <p id="head">Happy Birthday Vinit</p>
     <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
     <p>Hope your day goes great!</p>
   </div>
